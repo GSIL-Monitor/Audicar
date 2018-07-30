@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title_bg"
+    android:id="@+id/rl_title">
+    <View
+        android:id="@+id/view_auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/title_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_t"
+        android:layout_below="@id/view_auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="@dimen/margin5"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin2"
+        android:src="@mipmap/btn_back" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/title_text"
+        android:textSize="@dimen/title_text"
+        tools:text=""
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/title_bg"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/choose_city_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textColor="#fff"
+        android:gravity="left|center_vertical"
+        android:textSize="@dimen/h_text"
+        android:drawableLeft="@mipmap/location_bg"
+        android:drawablePadding="@dimen/margin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin2"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:maxEms="5"
+        android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/reset_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="重置"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="@dimen/h_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin1.5"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/activity_intro_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="如何获取"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="@dimen/h_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin1.5"
+            android:drawableLeft="@mipmap/wenhao_icon"
+            android:drawablePadding="@dimen/margin0.5"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/choose_select_img"
+            android:layout_width="@dimen/margin6"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin2"
+            android:src="@mipmap/choose_select"
+            android:scaleType="center"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/share_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin2"
+            android:visibility="gone"
+            />
+
+</RelativeLayout>
+</RelativeLayout>

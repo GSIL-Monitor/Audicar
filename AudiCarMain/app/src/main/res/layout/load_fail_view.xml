@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/load_fail_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_failed"
+            android:layout_marginTop="@dimen/margin2"
+            android:textSize="@dimen/sp14_text"
+            android:textColor="#999"
+            android:layout_marginLeft="@dimen/margin0.75"/>
+        
+        <TextView
+            android:id="@+id/reload_txt"
+            android:layout_width="@dimen/margin12"
+            android:layout_height="@dimen/margin5"
+            android:background="@drawable/reload_bg"
+            android:layout_marginTop="@dimen/margin5"
+            android:text="重新加载"
+            android:gravity="center"
+            android:textSize="@dimen/sp14_text"
+            android:textColor="#999"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">奥迪二手车</string>
+
+    <!--自动更新模块-->
+    <string name="str_update_need_sdcard_permission">更新需要sd卡权限</string>
+    <string name="str_update_content">发现新版本！</string>
+    <string name="str_update_cancel">放弃更新</string>
+    <string name="str_update_sure">立即更新</string>
+    <string name="str_update_fail">更新地址错误，请联系客服！</string>
+    <string name="str_downloading">下载中...</string>
+    <string name="str_downloading_noti_title">下载新版本</string>
+    <string name="str_download_fail">下载失败</string>
+
+    <!-- 登录模块 -->
+    <string name="title_login">登录</string>
+    <string name="login_by_phone_number">手机号直接登录</string>
+    <string name="get_check_code">获取验证码</string>
+    <string name="phone_number">手机号</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="check_code">短信验证码</string>
+    <string name="input_check_code">请输入短信验证码</string>
+    <string name="btn_login">登录</string>
+    <string name="input_correct_phone_number">请输入正确的手机号码</string>
+    <string name="phone_number_cannot_be_empty">手机号码不能为空</string>
+    <string name="other_login_way">第三方登录</string>
+    <string name="qq">QQ</string>
+    
+    <!--首页-->
+    <string name="tab_main_page">首页</string>
+    <string name="tab_buy_car">买车</string>
+    <string name="tab_sale_car">卖车</string>
+    <string name="tab_calling">互动</string>
+    <string name="tab_mine">我的</string>
+    <string name="beijing">北京</string>
+    <string name="search_hint">输入车型/经销商</string>
+    <string name="want_buy_car">我要买车</string>
+    <string name="want_sale_car">卖车</string>
+    <string name="guess_price">估价</string>
+    <string name="price0">不限</string>
+    <string name="price1">10万以下</string>
+    <string name="price2">10-15万</string>
+    <string name="price3">15-20万</string>
+    <string name="price4">20-30万</string>
+    <string name="price5">30-50万</string>
+    <string name="price6">50万以上</string>
+    <string name="input_cartype">输入车型</string>
+    <string name="price_range">价格</string>
+    <string name="search">搜索</string>
+    <string name="input_cartype_hint">例：A4L</string>
+
+    <string name="a6">A6</string>
+    <string name="q7">Q7</string>
+    <string name="r8">R8</string>
+    <string name="tt">TT</string>
+
+    <string name="suv">SUV</string>
+    <string name="newer_car">准新车</string>
+    <string name="other_brand">其他品牌</string>
+    <string name="all_brand">全部车源</string>
+    
+    <string name="excellent_cars">超值好车</string>
+    <string name="urgent_sale_cars">急售车源</string>
+    <string name="owner_story">车主故事</string>
+    <string name="more_brand">更多品牌</string>
+
+    
+
+    <!--loadingview-->
+    <string name="loading_failed">加载失败</string>
+
+    <!--选择城市-->
+    <string name="choose_city">选择城市</string>
+    <string name="located_city">定位城市</string>
+    <string name="choose_tip">目前开通的城市有：</string>
+    <string name="more_city">更多城市陆续上线...</string>
+    <string name="sure">确认</string>
+
+    <!--xmpp-->
+    <string name="add_friends_success">发送成功</string>
+    <string name="net_error">网络连接错误，请检查</string>
+    <string name="dialog_load_content">登录中...</string>
+    <string name="dialog_title">提示</string>
+    <string name="dialog_delete_friends">确定要删除当前好友?</string>
+    <string name="dialog_group_name_message">请输入群名称</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="login_str">登录</string>
+    <string name="register_str">注册</string>
+    <string name="register_email">请输入您邮箱(必填)</string>
+    <string name="register_class">请输入班级验证码(选填)</string>
+    <string name="register_phone">请输入手机号码(选填)</string>
+    <string name="register_email_error">输入邮箱格式不正确</string>
+    <string name="register_name">请输入您账号(必填)</string>
+    <string name="old_password">请输入您的旧密码</string>
+    <string name="new_password">请输入您的新密码</string>
+    <string name="register_password">请输入您的密码(必填)</string>
+    <string name="register_again_password">请输入确认密码(必填)</string>
+    <string name="register_password_defferent">输入密码不同</string>
+    <string name="service_result">服务器没有返回结果</string>
+    <string name="accounted">这个账号已经存在</string>
+    <string name="register_fail">注册失败</string>
+    <string name="register_success">恭喜你注册成功</string>
+    <string name="send">发送</string>
+    <string name="search_str">搜索</string>
+    <string name="hint_search_name">输入您要添加的好友名称</string>
+    <string name="add">添加</string>
+    <string name="exit">退出登录</string>
+    <string name="friends_list">我的好友</string>
+    <string name="main_str">信息</string>
+    <string name="main_group_str">首页</string>
+    <string name="contacts_str">通讯录</string>
+    <string name="me_str">我</string>
+    <string name="explore_str">位置</string>
+    <string name="edu_str">教育机构</string>
+    <string name="signature">签名</string>
+    <string name="image_icon">头像</string>
+    <string name="login_view_password">忘记密码</string>
+    <string name="login_view_no_register_title">还没有账号?</string>
+    <string name="login_view_no_register">立即注册</string>
+    <string name="change_password_new">新密码</string>
+    <string name="change_passowrd_again">确认密码</string>
+    <string name="change_passord_success">修改密码成功</string>
+    <string name="changge_password_str">修改密码</string>
+    <string name="add_new_friends">新的朋友</string>
+    <string name="group_chat">群聊</string>
+    <string name="subscribe">接受</string>
+    <string name="im_char_str">聊天界面</string>
+    <string name="change_password_str">修改密码</string>
+    <string name="new_friends_str">新朋友</string>
+    <string name="group_str">群聊</string>
+    <string name="group_add_str">发起群聊</string>
+    <string name="login_chack">记住账号</string>
+    <string name="login_error">登录失败</string>
+    <string name="username">登录名</string>
+    <string name="name">昵称</string>
+    <string name="adr">地区</string>
+    <string name="sex">性别</string>
+    <string name="surname">姓名</string>
+    <string name="email">邮箱</string>
+    <string name="phone">手机号</string>
+    <string name="change_password">密码修改</string>
+    <string name="role_play">请假</string>
+    <string name="no_fill">未填写</string>
+    <string name="submit">确定</string>
+    <string name="gl_wait">请稍等</string>
+    <string name="xmpp_no_logined">连接聊天服务器失败，请与管理员联系。</string>
+
+    <string name="msg_dialog_tip">本次在线咨询服务已关闭，为帮助我们更好的为您服务，请您对本次咨询作出评价，谢谢！</string>
+
+    <string-array name="charactersArray">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string-array name="spinnername">
+        <item>小时</item>
+        <item>分钟 </item>
+        <item>天</item>
+    </string-array>
+
+    <string name="send_content_empty">发送内容不能为空</string>
+    <string name="delete_friends">移出通讯录</string>
+    <string name="sign_empty">签名不能为空</string>
+    <string name="friends_str">详情资料</string>
+    <string name="search_pop">请输入搜索用户</string>
+    <string name="main_imchar_empty">没对话内容</string>
+    <string name="no_friends">没朋友申请</string>
+    <string name="search_pop_empty">没搜索结果</string>
+
+    <string name="located_failed">定位失败</string>
+
+    <string name="load_failed">数据加载失败！</string>
+    
+    <string name="no_data">暂无数据</string>
+</resources>

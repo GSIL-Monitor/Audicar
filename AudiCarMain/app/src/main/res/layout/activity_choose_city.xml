@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll_root_view"
+        android:visibility="gone">
+    <!--<com.beautyyan.beautyyanapp.view.MyScrollView-->
+        <!--android:id="@+id/sc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scrollbars="none">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+<com.beautyyan.beautyyanapp.view.stickylistview.StickyListHeadersListView
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/margin2"
+    android:scrollbars="none"
+    >
+</com.beautyyan.beautyyanapp.view.stickylistview.StickyListHeadersListView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    <GridView
+        android:id="@+id/cities_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:horizontalSpacing="@dimen/h_space"
+        android:verticalSpacing="@dimen/v_space"
+        android:layout_margin="@dimen/margin"
+        ></GridView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/more_city"
+        android:textSize="@dimen/h_text"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/sure"
+        android:textSize="@dimen/button_text_size"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin2"
+        android:layout_marginRight="@dimen/margin2"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <!--</com.beautyyan.beautyyanapp.view.MyScrollView>-->
+    </LinearLayout>
+    <com.beautyyan.beautyyanapp.view.LoadingView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingview"></com.beautyyan.beautyyanapp.view.LoadingView>
+
+    <TextView
+        android:id="@+id/tv_dialog"
+        android:layout_width="@dimen/margin7"
+        android:layout_height="@dimen/margin7"
+        android:layout_centerInParent="true"
+        android:background="@drawable/letter_bg"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:textSize="@dimen/sp24_text"/>
+
+    <View
+        android:id="@+id/view_bar"
+        android:layout_width="@dimen/margin2"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="@dimen/margin0.5"
+        android:background="@drawable/zimulist_bg"
+        android:visibility="gone"/>
+
+    <com.beautyyan.beautyyanapp.view.SideBar
+        android:id="@+id/sideBar"
+        android:layout_width="@dimen/margin3"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

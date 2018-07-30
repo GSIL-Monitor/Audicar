@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/no_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin4"
+        android:background="@drawable/map_choose_bg1"
+        android:text="选择地图"
+        android:gravity="center"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/normal_text"
+        />
+
+    <View
+        android:id="@+id/baidu_view"
+        style="@style/view_between"
+        android:layout_height="1px"/>
+
+    <TextView
+        android:id="@+id/baidu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6"
+        android:text="百度地图"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/button_text_size"
+        android:background="@color/white"/>
+    <View
+        android:id="@+id/gaode_view"
+        style="@style/view_between"
+        android:layout_height="1px"/>
+
+    <TextView
+        android:id="@+id/gaode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6"
+        android:text="高德地图"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/button_text_size"
+        android:background="@color/white"/>
+    <View
+        android:id="@+id/tercent_view"
+        style="@style/view_between"
+        android:layout_height="1px"/>
+    <TextView
+        android:id="@+id/tercent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6"
+        android:text="腾讯地图"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/button_text_size"
+        android:background="@drawable/map_choose_bg2"/>
+    <TextView
+        android:id="@+id/cancel_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6"
+        android:text="取消"
+        android:layout_marginTop="@dimen/margin1.5"
+        android:gravity="center"
+        android:textColor="@color/text_black_4"
+        android:textSize="@dimen/button_text_size"
+        android:background="@drawable/map_choose_bg"
+        />
+
+</LinearLayout>

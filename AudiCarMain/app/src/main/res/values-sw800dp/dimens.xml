@@ -1,0 +1,98 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+
+    <dimen name="title_left">40sp</dimen>
+    <dimen name="title_text">36sp</dimen>
+
+    <dimen name="s_text">16sp</dimen>
+    <dimen name="m_text">24sp</dimen>
+    <dimen name="normal_text">26sp</dimen>
+    <dimen name="h_text">32sp</dimen>
+    <dimen name="xh_text">40sp</dimen>
+    <dimen name="sp15_text">30sp</dimen>
+    <dimen name="sp14_text">28sp</dimen>
+    <dimen name="sp10_text">20sp</dimen>
+    <dimen name="sp11_text">22sp</dimen>
+    <dimen name="sp9_text">18sp</dimen>
+    <dimen name="sp17_text">34sp</dimen>
+    <dimen name="sp18_text">36sp</dimen>
+    <dimen name="sp16_text">32sp</dimen>
+    <dimen name="sp24_text">48sp</dimen>
+
+
+    <dimen name="font_size_min">26sp</dimen>
+
+    <!--loadingview-->
+    <dimen name="font_size_small">28sp</dimen>
+    <dimen name="loading_width">600dp</dimen>
+
+    <!--公共-->
+    <dimen name="button_height">96dp</dimen>
+    <dimen name="button_text_size">34sp</dimen>
+    <dimen name="button_width">512dp</dimen>
+
+    <!--边距-->
+    <dimen name="margin_fu4">-8dp</dimen>
+    <dimen name="margin_fu">-6dp</dimen>
+    <dimen name="margin0.25">4dp</dimen>
+    <dimen name="margin0.5">8dp</dimen>
+    <dimen name= "margin0.75">12dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="margin1.25">20dp</dimen>
+    <dimen name="margin1.5">24dp</dimen>
+    <dimen name="margin2">32dp</dimen>
+    <dimen name="margin2.25">36dp</dimen>
+    <dimen name="margin2.5">40dp</dimen>
+    <dimen name="margin3">48dp</dimen>
+    <dimen name="margin3.5">56dp</dimen>
+    <dimen name="margin4">64dp</dimen>
+    <dimen name="margin4.5">72dp</dimen>
+    <dimen name="margin5">80dp</dimen>
+    <dimen name="margin5.5">88dp</dimen>
+    <dimen name="margin6">96dp</dimen>
+    <dimen name="margin7">112dp</dimen>
+    <dimen name="margin7.5">120dp</dimen>
+    <dimen name="margin8">128dp</dimen>
+    <dimen name="margin9">144dp</dimen>
+    <dimen name="margin10">160dp</dimen>
+    <dimen name="margin12">192dp</dimen>
+    <dimen name="margin13">208dp</dimen>
+    <dimen name="margin15">240dp</dimen>
+    <dimen name="margin17">272dp</dimen>
+    <dimen name="margin18">288dp</dimen>
+    <dimen name="margin20">320dp</dimen>
+    <dimen name="margin22">352dp</dimen>
+    <dimen name="margin22.5">360dp</dimen>
+
+    <dimen name="item_width">360dp</dimen>
+    <dimen name="item_height">240dp</dimen>
+
+    <!--gridview-->
+    <dimen name="h_space">24dp</dimen>
+    <dimen name="v_space">48dp</dimen>
+
+    <dimen name="mainactivity_tab_height">108dp</dimen>
+    <dimen name="tab_img_height">60dp</dimen>
+
+    <dimen name="point_height">16dp</dimen>
+
+    <dimen name="banner_height">400dp</dimen>
+    <dimen name="msg_max_width">400dp</dimen>
+    <dimen name="circle_width">160dp</dimen>
+
+    <!--toast宽度-->
+    <dimen name="toast_width">420dp</dimen>
+
+    <dimen name="car_list_item_height">480dp</dimen>
+
+    <dimen name="dialog_width">560dp</dimen>
+    <dimen name="dialog_height">432dp</dimen>
+    <dimen name="msg_star_width">64dp</dimen>
+
+    <dimen name="activity_dialog_width">550dp</dimen>
+    <dimen name="activity_dialog_height">628dp</dimen>
+    <dimen name="activity_icon_height">262dp</dimen>
+</resources>
+

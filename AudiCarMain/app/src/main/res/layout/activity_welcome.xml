@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.beautyyan.beautyyanapp.view.MyViewPager
+            android:id="@+id/myVp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.beautyyan.beautyyanapp.view.MyViewPager>
+        <LinearLayout
+            android:id="@+id/vpPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin1.5"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"></LinearLayout>
+        <Button
+            android:id="@+id/start"
+            android:layout_width="@dimen/margin15"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/welcome_bg"
+            android:text="立即体验"
+            android:gravity="center"
+            android:layout_alignBottom="@id/vpPoints"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/margin3"
+            android:textSize="@dimen/button_text_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

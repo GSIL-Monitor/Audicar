@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/title_view" />
+    <!--<com.shwread.android.ui.widget.LoadingView-->
+        <!--android:id="@+id/webview_loading_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/common_white" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/webview_flay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layerType="hardware">
+
+        <com.beautyyan.beautyyanapp.dsbridge.DWebView
+            android:id="@+id/webview_web"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layerType="hardware"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_rl_title"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/view_detail_auto"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin6"
+                android:layout_below="@+id/view_detail_auto"
+                android:layout_alignParentStart="true">
+                <View
+                    android:id="@+id/detail_view_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/title_bg"
+                    android:alpha="0"
+                    />
+                <TextView
+                    android:id="@+id/title_detail"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/title_text"
+                    android:textSize="@dimen/title_text"
+                    tools:text=""
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                   />
+                <ImageView
+                    android:id="@+id/detail_back_btn"
+                    android:layout_width="@dimen/margin5"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin2"
+                    android:src="@mipmap/btn_back"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin0.5"/>
+                <ImageView
+                    android:id="@+id/detail_back_btn_zero"
+                    android:layout_width="@dimen/margin5"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/btn_back_detail"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/margin0.5"
+                    android:layout_marginLeft="@dimen/margin0.5"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/detail_collect_img"
+                    android:layout_width="@dimen/margin4"
+                    android:layout_height="@dimen/margin4"
+                    android:src="@drawable/collect_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin1.5"
+                    android:scaleType="center"/>
+                <ImageView
+                    android:id="@+id/share_img"
+                    android:layout_width="@dimen/margin4"
+                    android:layout_height="@dimen/margin4"
+                    android:src="@mipmap/share_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/detail_collect_img"
+                    android:layout_marginRight="@dimen/margin2"
+                    android:visibility="gone"
+                    android:scaleType="center"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.beautyyan.beautyyanapp.view.LoadingView
+            android:id="@+id/loadview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.beautyyan.beautyyanapp.view.LoadingView>
+    </RelativeLayout>
+</LinearLayout>

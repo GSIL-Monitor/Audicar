@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/margin17"
+        android:orientation="vertical"
+        android:background="@drawable/regular_intro_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取规则"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp15_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin2"
+            android:textColor="#333"
+            />
+        <ImageView
+            android:id="@+id/cancel_img"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/cancel_icon"
+            android:scaleType="center"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin6"
+            android:layout_marginLeft="@dimen/margin2.5"
+            android:layout_marginRight="@dimen/margin2.5"
+            android:text="活动期间，您可以通过登录APP获得奖励奥迪币，每天首次登录获100奥迪币。"
+            android:textColor="#333"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

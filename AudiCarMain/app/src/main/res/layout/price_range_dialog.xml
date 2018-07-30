@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5"
+            android:text="价格"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_5"
+            android:paddingLeft="@dimen/margin4"
+            android:textSize="@dimen/button_text_size"
+            />
+        <ImageView
+            android:id="@+id/cancel_img"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/cancel_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="不限"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou0"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="10万以下"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou1"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="10-15万"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou2"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="15-20万"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou3"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="20-30万"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou4"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="30-50万"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou5"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin2">
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5.5"
+            android:text="50万以上"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/text_black_4"
+            android:drawableLeft="@mipmap/price_icon_unselected"
+            android:drawablePadding="@dimen/margin"
+            android:textSize="@dimen/h_text"/>
+
+        <ImageView
+            android:id="@+id/gou6"
+            android:layout_width="@dimen/margin5"
+            android:layout_height="@dimen/margin5"
+            android:src="@mipmap/price_gougou_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"/>
+    
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin6"
+        android:background="#333"
+        android:text="完成"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin3"
+        android:textSize="@dimen/button_text_size"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_mainactivity">
+
+    <!--首页-->
+    <FrameLayout
+        android:id="@+id/main_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!--买车-->
+    <FrameLayout
+        android:id="@+id/buy_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!--卖车-->
+    <FrameLayout
+        android:id="@+id/sale_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!--互动-->
+    <FrameLayout
+        android:id="@+id/call_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <!--我的-->
+    <FrameLayout
+        android:id="@+id/mine_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/mainactivity_tab_height"
+        android:background="@color/title_bg"
+        android:baselineAligned="false"
+        android:paddingTop="2dp"
+>
+
+
+        <LinearLayout
+            android:id="@+id/tab_main"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_main_img"
+                android:layout_width="@dimen/tab_img_height"
+                android:layout_height="@dimen/tab_img_height"
+                android:src="@mipmap/tab_main_unselected"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_main_page"
+                android:textColor="@color/main_tab_selector"
+                android:textSize="@dimen/font_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_buy"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tab_buy_img"
+                android:layout_width="@dimen/tab_img_height"
+                android:layout_height="@dimen/tab_img_height"
+                android:src="@mipmap/tab_buy_unselected"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_buy_car"
+                android:textColor="@color/main_tab_selector"
+                android:textSize="@dimen/font_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_sale"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_sale_img"
+                android:layout_width="@dimen/tab_img_height"
+                android:layout_height="@dimen/tab_img_height"
+                android:src="@mipmap/tab_sale_unselected"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_sale_car"
+                android:textColor="@color/main_tab_selector"
+                android:textSize="@dimen/font_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_calling"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tab_call_img"
+                android:layout_width="@dimen/tab_img_height"
+                android:layout_height="@dimen/tab_img_height"
+                android:src="@mipmap/tab_call_unselected"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_calling"
+                android:textColor="@color/main_tab_selector"
+                android:textSize="@dimen/font_size_min" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tab_mine_img"
+                android:layout_width="@dimen/tab_img_height"
+                android:layout_height="@dimen/tab_img_height"
+                android:src="@mipmap/tab_mine_unselected"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_mine"
+                android:textColor="@color/main_tab_selector"
+                android:textSize="@dimen/font_size_min" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

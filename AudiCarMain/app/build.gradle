@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        //证书
+        audicar_keystore {
+            keyAlias 'audicar'
+            keyPassword 'yuyuan123'
+            storeFile file('audicar_keystore.jks')
+            storePassword 'yuyuan123'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.beautyyan.beautyyanapp"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 7
+        versionName "2.2.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.audicar_keystore
+            manifestPlaceholders = [AMAP_KEY: "MSIBZjfvV8GHbhfVHRUALqQ213V7cypT"]
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.audicar_keystore
+            manifestPlaceholders = [AMAP_KEY: "MSIBZjfvV8GHbhfVHRUALqQ213V7cypT"]
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    productFlavors {
+
+        //umeng渠道包
+        wandoujia {}
+        xiaomi {}
+        baidu {}
+        huawei {}
+        sanxing {}
+        anzhi {}
+        yingyongbao {}
+        vivo {}
+        oppo {}
+        update {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+
+    }
+    allprojects {
+        repositories {
+            mavenCentral()
+        }
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(include: ['*.jar'], dir: 'inLibs')
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile fileTree(include: '*.jar', exclude: ['android-support-*.jar'], dir: 'libs')
+//    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'pub.devrel:easypermissions:0.4.2'
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textSize="@dimen/sp15_text"
+            android:textColor="#666666"/>
+        <EditText
+            android:id="@+id/phone_num_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:textSize="@dimen/sp15_text"
+            android:textColorHint="@color/hint_color"
+            android:paddingLeft="5dp"
+            android:hint="@string/input_phone_number"
+            android:inputType="number"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+    </LinearLayout>
+
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin1.5"
+        android:layout_marginRight="@dimen/margin1.5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp15_text"
+            android:textColor="#666666"
+            android:text="@string/check_code"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/check_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:layout_marginLeft="1dp"
+            android:textSize="@dimen/sp15_text"
+            android:hint="@string/input_check_code"
+            android:textColorHint="@color/hint_color"
+            android:paddingLeft="5dp"
+            android:inputType="number"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+        <Button
+            android:id="@+id/check_code_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/get_code_bg_selector"
+            android:text="@string/get_check_code"
+            android:layout_weight="1.8"
+            android:textColor="@color/button_unselected_text_color"
+            android:textSize="@dimen/sp14_text"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_gravity="center_vertical"
+            android:enabled="false"/>
+    </LinearLayout>
+    <View style="@style/view_between"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin1.5"
+        android:layout_marginRight="@dimen/margin1.5"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_bg_selector"
+        android:layout_marginLeft="@dimen/margin3"
+        android:layout_marginRight="@dimen/margin3"
+        android:layout_marginTop="@dimen/margin4"
+        android:text="绑定并登录"
+        android:textColor="@color/button_unselected_text_color"
+        android:textSize="@dimen/button_text_size"
+        android:enabled="false"/>
+
+
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beautyyan.beautyyanapp"
+    android:versionCode="7">
+    <!-- SDK权限申明 -->
+    <permission
+        android:name="com.beautyyan.beautyyanapp.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- wifi 和 网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+
+    <!-- 获取imei,imsi,selfPhoneNum -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 在sd卡中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <!-- 写SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 消息推送设置：震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 接受SDK消息广播权限 -->
+    <uses-permission android:name="com.beautyyan.beautyyanapp.permission.RECEIVE_MSG" />
+    <!-- 获取开机启动动作的权限permission -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--自动更新:调用hideNotification不显示notification需要的权限-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+
+    <application
+        android:name="com.beautyyan.beautyyanapp.YuYuanApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <!--自动更新：兼容7.0以上-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.beautyyan.beautyyanapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!-- 自动更新-->
+        <receiver android:name="com.beautyyan.beautyyanapp.utils.updater.DownloadReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 自动更新 -->
+        <activity
+            android:name="com.beautyyan.beautyyanapp.activity.UpdateActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${AMAP_KEY}" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- ****************umeng start  ****************-->
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5abb7977f29d9822f400006d"
+            />
+        <meta-data
+            android:value="${UMENG_CHANNEL_VALUE}"
+            android:name="UMENG_CHANNEL" />
+        <!--及策-->
+        <meta-data
+            android:name="com.admaster.jicesdk.appKey"
+            android:value="" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <receiver
+            android:name=".wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.FloatActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="tencent100424468"/>
+            </intent-filter>
+
+        </activity>
+        <!--微博-->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" >
+        </activity>
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <!-- ****************umeng end  ****************-->
+
+        <!--支付宝-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name ="android.intent.category.DEFAULT"/>
+                <data android:scheme="audimall"
+                    android:host="yuyuan.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beautyyan.beautyyanapp.activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
+            >
+        </activity>
+        <activity android:name=".activity.ChooseCityActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|fontScale">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="xmpp.activites.ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.ChoseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.CropImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.FriendActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.MsgActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.MyRoomActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.PicSrcPickerActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="xmpp.activites.RoomMemActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="xmpp.activites.ShowPicActivitiy"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+        <activity android:name=".activity.ServiceProActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TwoYearsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.OneOneZeroActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.YanChangActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BindPhoneNumActivity"
+            android:screenOrientation="portrait"/>
+        <receiver android:name=".NetworkBroadcast">
+             <intent-filter>  
+                    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />  
+                </intent-filter>
+
+        </receiver>
+
+    </application>
+
+</manifest>

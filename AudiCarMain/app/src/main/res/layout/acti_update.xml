@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- 下载界面 -->
+    <RelativeLayout
+        android:id="@+id/rl_downloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_background"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="59dp"
+            android:background="@drawable/radius_black_all"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/str_downloading"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:id="@+id/tv_downloading_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:gravity="center_horizontal"
+                android:textSize="13sp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <!--  有版本更新的弹出界面   -->
+    <RelativeLayout
+        android:id="@+id/rl_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        >
+        <!--中间的选择框-->
+        <LinearLayout
+            android:id="@+id/rl_update_alert"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_white_all"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+            <!-- 更新的提示内容 -->
+            <TextView
+                android:id="@+id/tv_update_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginTop="42.5dp"
+                android:gravity="left"
+                android:text="@string/str_update_content"
+                android:layout_above="@+id/rl_dialog_bottom"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:layout_marginBottom="@dimen/margin3"
+                android:paddingTop="@dimen/margin2"/>
+
+            <!--选择框下面的按钮-->
+            <RelativeLayout
+                android:id="@+id/rl_dialog_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/radius_grey_bottom"
+                >
+                <!--选择框下面整一行的按钮-->
+                <Button
+                    android:id="@+id/btn_update_sure_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@drawable/radius_white_bottom"
+                    android:text="@string/str_update_sure"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    />
+                <!--选择框下面左边的放弃按钮-->
+                <Button
+                    android:id="@+id/btn_update_cancel"
+                    android:layout_width="137.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/radius_white_leftbottom"
+                    android:text="@string/str_update_cancel"
+                    android:textColor="@color/hint_color"
+                    android:textSize="14sp"
+                    />
+                <!--选择框下面右边的更新按钮-->
+                <Button
+                    android:id="@+id/btn_update_sure"
+                    android:layout_width="137dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1px"
+                    android:background="@drawable/radius_white_rightbottom"
+                    android:text="@string/str_update_sure"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/margin"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- 版本更新的logo -->
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/ic_update"
+            android:layout_above="@id/rl_update_alert"
+            android:layout_marginBottom="-42.5dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

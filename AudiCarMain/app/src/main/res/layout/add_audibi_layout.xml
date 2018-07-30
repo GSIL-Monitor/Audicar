@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="@dimen/margin13"
+        android:layout_height="@dimen/margin9"
+        android:orientation="vertical"
+        android:background="@drawable/toast_bg"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日登录"
+            android:textColor="#fff"
+            android:textSize="@dimen/normal_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin1.5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  +100"
+            android:textColor="#F5CF47"
+            android:textSize="@dimen/normal_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin1.5"
+            android:drawableLeft="@mipmap/audibi_icon"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/located_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin5"
+                android:orientation="horizontal"
+                android:background="@drawable/located_city_bg"
+                >
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_located"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text=""-->
+                    <!--android:textSize="@dimen/h_text"-->
+                    <!--android:textColor="@color/red_used"-->
+                    <!--android:drawableLeft="@mipmap/choose_city_location_bg"-->
+                    <!--android:drawablePadding="@dimen/margin0.5"/>-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin0.5"
+                    android:layout_centerInParent="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/choose_city_location_bg"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:id="@+id/tv_located"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin5"
+                        android:textSize="@dimen/h_text"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="@dimen/margin0.5"
+                        android:textColor="@color/red_used"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>

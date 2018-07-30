@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin3"
+        android:textColor="#999999"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin2"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/margin" >
+
+        <xmpp.util.CircularImage
+            android:id="@+id/headImg"
+            android:layout_width="@dimen/margin6"
+            android:layout_height="@dimen/margin6"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin2"
+            android:scaleType="fitXY"
+            android:layout_gravity="top"
+            android:src="@mipmap/store_headbg_fang"/>
+        <ImageView
+            android:id="@+id/jian_img"
+            android:layout_width="@dimen/margin"
+            android:layout_height="@dimen/margin"
+            android:src="@mipmap/jian_unpressed"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/margin2.25"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:id="@+id/msgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/msg_bg"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|left"
+                android:maxWidth="@dimen/msg_max_width"
+                android:textColor="#333333"
+                android:textSize="@dimen/margin2"
+                android:padding="@dimen/margin1.25"
+                android:layout_marginTop="@dimen/margin0.25"/>
+            <com.beautyyan.beautyyanapp.view.BubbleImageView
+                android:id="@+id/imgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bubble_arrowHeight = "@dimen/margin"
+                app:bubble_arrowWidth="@dimen/margin"
+                app:bubble_angle="@dimen/margin0.5"
+                app:bubble_arrowLocation="left"
+                android:visibility="gone"
+                app:bubble_arrowTop="@dimen/margin2"
+                android:layout_marginTop="@dimen/margin0.25"
+                app:bubble_arrowOffset="@dimen/margin_fu"/>
+
+            <ImageView
+                android:id="@+id/gifImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/margin"
+                android:paddingLeft="@dimen/margin"
+                android:paddingRight="@dimen/margin"
+                android:paddingTop="@dimen/margin"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/voiceView"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin5"
+                android:layout_gravity="center"
+                android:background="@drawable/msg_bg_mine"
+                android:padding="@dimen/margin1.5"
+                android:src="@drawable/voiceto0"
+                android:visibility="gone"/>
+
+            <xmpp.d3View.gifView.GifView
+                android:id="@+id/gifView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="@dimen/margin6"
+                android:paddingBottom="@dimen/margin"
+                android:paddingLeft="@dimen/margin"
+                android:paddingTop="@dimen/margin"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+         <TextView
+                android:id="@+id/soundView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="@dimen/margin4"
+                android:paddingBottom="@dimen/margin"
+                android:paddingLeft="@dimen/margin"
+                android:paddingTop="@dimen/margin"
+                android:text="1&quot;"
+                android:textColor="#999999"
+                android:visibility="gone" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_blank"
+        style="@style/view_between"
+        android:background="@color/bg_gray"
+        android:layout_height="@dimen/margin"
+        />
+
+</LinearLayout>

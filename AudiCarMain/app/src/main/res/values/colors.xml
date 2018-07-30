@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="text_black_1">#202020</color>
+    <color name="text_black_2">#333333</color>
+    <color name="text_black_3">#424242</color>
+    <color name="text_black_4">#666666</color>
+    <color name="text_black_5">#aaaaaa</color>
+    <color name="text_black_6">#bbbbbb</color>
+    <color name="text_black_7">#f5f5f5</color>
+    <color name="text_black_8">#eeeeee</color>
+
+    //灰暗背景色
+    <color name="gray_bg">#f5f5f5</color>
+
+    <color name="title_bg">#333333</color>
+    <color name="title_text">#ffffff</color>
+    <color name="normal_text_color">#333333</color>
+    <color name="no_color">#00000000</color>
+    <color name="little_color">#00000000</color>
+    <color name="hint_color">#bbbbbb</color>
+
+    <!--loadingview-->
+    <color name="comment_exception_default_tv_color">#909090</color>
+
+    <!--公共-->
+    <color name="button_unselected_color">#eeeeee</color>
+    <color name="button_unselected_text_color">#999999</color>
+
+    <color name="button_selected_color">#000000</color>
+    <color name="button_selected_text_color">#ffffff</color>
+
+
+
+    <!--xmpp-->
+    <color name="red">#EE1111</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#FF999999</color>
+    <color name="light_grey">#99999999</color>
+    <color name="dark_grey">#FF666666</color>
+    <color name="grey_e">#FFeeeeee</color>
+    <!-- 透明颜色 -->
+    <color name="transparent_background">#00000000</color>
+    <color name="transparent">#80000000</color>
+    <color name="blue">#3478f6</color>
+    <color name="green">#ff55c45f</color>
+    <color name="line_color">#959595</color>
+    <color name="bg_gray">#f1f1f1</color>
+    <color name="btn_pre">#92DAC7</color>
+    <color name="theme_color">#37af94</color>
+    <color name="province_line_border">#C7C7C7</color>
+
+    <color name="red_used">#bb0a30</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+</resources>

@@ -16,8 +16,8 @@ android {
         applicationId "com.beautyyan.beautyyanapp"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 7
-        versionName "2.2.0"
+        versionCode 8
+        versionName "2.4.0"
         multiDexEnabled true
     }
 
